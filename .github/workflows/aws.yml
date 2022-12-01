@@ -52,4 +52,4 @@ jobs:
         REGISTRY: ${{ steps.login-ecr-public.outputs.registry }}
       run: |
         docker build -t $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:$CPDB_VER $BUILD_PATH
-        docker push $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:CPDB_VER
+        docker push $REGISTRY/$REGISTRY_ALIAS/$REPOSITORY:$CPDB_VER
